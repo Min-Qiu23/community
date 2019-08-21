@@ -15,6 +15,7 @@ public class HelloController {
     @RequestMapping("/hello")
     public String hello(@RequestParam(name = "name") String name , Model model){
 
+        // This is my first springboot project
         model.addAttribute("name", name);
         return "hello";
     }
