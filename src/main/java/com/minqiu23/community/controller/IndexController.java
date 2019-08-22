@@ -10,13 +10,10 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 
 @Controller
-public class HelloController {
+public class IndexController {
 
-    @RequestMapping("/hello")
-    public String hello(@RequestParam(name = "name") String name , Model model){
-
-        // This is my first springboot project
-        model.addAttribute("name", name);
-        return "hello";
+    @RequestMapping("/")
+    public String hello(){
+        return "index";
     }
 }
